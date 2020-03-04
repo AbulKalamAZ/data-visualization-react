@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/data-visualization-react/static/css/main.b93b11f4.chunk.css",
+    "main.js": "/data-visualization-react/static/js/main.d294e90e.chunk.js",
+    "main.js.map": "/data-visualization-react/static/js/main.d294e90e.chunk.js.map",
+    "runtime-main.js": "/data-visualization-react/static/js/runtime-main.16d7d142.js",
+    "runtime-main.js.map": "/data-visualization-react/static/js/runtime-main.16d7d142.js.map",
+    "static/js/2.4d9743a2.chunk.js": "/data-visualization-react/static/js/2.4d9743a2.chunk.js",
+    "static/js/2.4d9743a2.chunk.js.map": "/data-visualization-react/static/js/2.4d9743a2.chunk.js.map",
+    "index.html": "/data-visualization-react/index.html",
+    "precache-manifest.8843d88c5b355eeeb2b291094ce9af04.js": "/data-visualization-react/precache-manifest.8843d88c5b355eeeb2b291094ce9af04.js",
+    "service-worker.js": "/data-visualization-react/service-worker.js",
+    "static/css/main.b93b11f4.chunk.css.map": "/data-visualization-react/static/css/main.b93b11f4.chunk.css.map",
+    "static/js/2.4d9743a2.chunk.js.LICENSE.txt": "/data-visualization-react/static/js/2.4d9743a2.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.16d7d142.js",
+    "static/js/2.4d9743a2.chunk.js",
+    "static/css/main.b93b11f4.chunk.css",
+    "static/js/main.d294e90e.chunk.js"
+  ]
+}
