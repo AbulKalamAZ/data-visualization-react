@@ -1,0 +1,10 @@
+.container-title h1 {
+  font-size: 2.5rem;
+  color: #000000a9;
+}
+
+@media only screen and (max-width: 1024px) {
+  container-title h1 {
+    font-size: 1.5rem;
+  }
+}

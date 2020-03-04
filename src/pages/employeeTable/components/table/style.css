@@ -1,0 +1,25 @@
+.data-table {
+  padding: 5vh 0;
+  font-size: 1.3rem;
+  color: #000000a9;
+}
+
+thead tr {
+  background: #172966;
+  color: #ffffffa9;
+}
+
+thead tr td {
+  cursor: pointer;
+}
+
+tbody tr td,
+tbody tr td a {
+  color: #000000a9;
+}
+
+@media only screen and (max-width: 1024px) {
+  .data-table {
+    font-size: 1.5;
+  }
+}
