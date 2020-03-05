@@ -7,6 +7,8 @@ import { useParams } from "react-router-dom";
 import Header from "../../components/header/Header";
 import Content from "../../components/content/Content";
 
+import PlaceholderImage from "../../assets/white_avatar.svg";
+
 function EmployeeProfile(props) {
   // matching the requested from whole employees array
   const { id } = useParams();
@@ -19,6 +21,7 @@ function EmployeeProfile(props) {
   const employeeAttendanceData = employee[0].attendances;
 
   //declaring state
+  const [showPlaceholder, setShowPlaceholder] = useState(true);
   const [currentPage, setCurrentPage] = useState(1);
   const [numberOfData] = useState(employeeAttendanceData.length);
   const [dataLimitPerPage] = useState(10);
@@ -73,13 +76,22 @@ function EmployeeProfile(props) {
     };
   });
 
+  const onImageLoad = () => {
+    setShowPlaceholder(false);
+  };
+
   return (
     <div className="employee-profile">
       <Header>
         <div className="employee-details">
           <div className="employee-avatar">
-            <img src={src} alt={`${name}'s avatar`} />
+            <img src={src} alt={`${name}'s avatar`} onLoad={onImageLoad} />
           </div>
+          {showPlaceholder && (
+            <div className="employee-avatar-overlay">
+              <img src={PlaceholderImage} alt="avatar placeholder" />
+            </div>
+          )}
           <div className="employee-info">
             <h1>{name}</h1>
             <p>

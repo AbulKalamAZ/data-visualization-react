@@ -26,12 +26,30 @@
 .employee-avatar:hover img {
   transform: scale(1.1);
 }
+
 .employee-avatar img {
   width: 100%;
   height: 100%;
   border-radius: 2%;
   z-index: -999;
   transition: 450ms all ease-in-out;
+}
+
+.employee-avatar-overlay {
+  position: absolute;
+  width: 280px;
+  height: 280px;
+  border: 3px solid #ffffffb0;
+  border-radius: 2%;
+  cursor: pointer;
+  overflow: hidden;
+}
+
+.employee-avatar-overlay img {
+  width: 280px;
+  height: 280px;
+  border-radius: 2%;
+  cursor: pointer;
 }
 
 .employee-info {
