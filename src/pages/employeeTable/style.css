@@ -1,3 +1,30 @@
+.header-content {
+  color: #ffffffb4;
+  letter-spacing: 1px;
+  word-spacing: 3px;
+  line-height: 1.4;
+}
+
+.header-content h1 {
+  font-size: 2.5rem;
+}
+.header-content p {
+  font-size: 1.5rem;
+}
+
+@media only screen and (max-width: 425px) {
+  .header-content {
+    word-spacing: 0;
+  }
+  .header-content h1 {
+    font-size: 1.5rem;
+  }
+
+  .header-content p {
+    font-size: 1.1rem;
+  }
+}
+
 .employee-table {
   width: 100%;
   min-height: 100vh;

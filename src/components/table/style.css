@@ -5,8 +5,10 @@
 }
 
 thead tr {
-  background: #172966;
-  color: #ffffffa9;
+  background: #007bff;
+  color: #ffffff;
+  font-weight: lighter;
+  letter-spacing: 1px;
 }
 
 thead tr td {
