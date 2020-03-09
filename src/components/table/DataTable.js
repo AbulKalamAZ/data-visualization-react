@@ -3,7 +3,6 @@ import "./style.css";
 import { Link } from "react-router-dom";
 
 import Table from "react-bootstrap/Table";
-
 export default class DataTable extends Component {
   setLocalStorage = data => {
     localStorage.setItem("name", data.name);
@@ -15,9 +14,15 @@ export default class DataTable extends Component {
   };
 
   render() {
-    const { tableHeads, data, isAttendanceTable } = this.props;
+    const { tableHeads, isAttendanceTable, data } = this.props;
     const tableHead = tableHeads.map((th, index) => {
-      return <th key={`abs${index}`}>{th}</th>;
+      return (
+        <th key={`abs${index}`}>
+          <div className="d-flex justify-content-between">
+            <span>{th}</span>
+          </div>
+        </th>
+      );
     });
 
     const tableData = data.map((data, index) => {
